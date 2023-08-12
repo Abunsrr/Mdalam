@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abu nasar</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTB
+    OenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+
+<style>
+
+:root{
+/*   --bg-color:#1f242d; */
+  --bg-color:#192e54;
+  --second-bg-color:#373c46;
+  --text-color:#fff;
+  --main-color:#0ef;
+  --back-gr: linear-gradient(rgba(9, 5, 54, 0.3), rgba(9, 5, 54, 0.3));
+   --reds-color:#ff004f;
+}
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+}
+#name i{
+    
+    font-style: normal; 
+    color: #765676;    
+    font-weight: bold;  
+    font-size: 34px; 
+    
+ 
+}
+
+    .web {
+    background-color:#101c32;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 80px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.web .greeting h1{
+    color: rgb(150, 114, 114);
+    padding: 20px;
+    margin-left: -20px;
+}
+
+.web .greeting h2{
+    color: rgb(150, 114, 114);
+
+    
+}
+.web .greeting p{
+  color: rgb(250, 252, 252);
+    padding: 20px;
+    margin-left: -20px;
+}
+.greeting p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.greeting span {
+    font-weight: bold;
+    color:var(--reds-color);
+}
+
+.web-list {
+    list-style: none;
+    padding: 20px;
+    margin-left: -20px;
+   
+}
+
+.web-list li {
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+}
+.web-list li h2 {
+   color: #007bff;
+   margin-top: 10px;
+}
+
+.web-list h1{
+    color: rgb(150, 114, 114);
+}
+.web-list li p {
+    font-size: 16px;
+    line-height: 1.5;
+    
+}
+
+.web-list span {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .web {
+        padding: 10px;
+    }
+}
+</style>
+<body>
+  
+<!-- navigation -->
+<nav>
+    <!-- <img src="LOGO.png" alt="MD Abu Nasar Alam"> -->
+    <span id="name">Rectify<i>x</i>  </span>
+    <div class="navigation">
+        
+        <ul  class="menu-list " id="menu-list">
+            <i id="close-btn" class="fa fa-times" aria-hidden="true"></i>
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="index.html" >About</a></li>
+            <li> <a href="rectifybusiness.html" class="active">services</a></li>
+            <li> <a href="blog.html">Blogs</a></li>
+            <li> <a href="index.html">Project</a></li>
+            <li> <a href="#contact">Contact</a></li>
+           
+        </ul>
+        <img id="menu-btn" src="hamburgepng.png" alt="">
+        <!-- <i class='bx bx-menu' id="menu-btn" ></i> -->
+    </div>
+    
+</nav>
+
+<!-- Home  -->
+
+
+<section class="container " id="web-cont">
+
+<div class="web">
+    
+    <div  class="greeting">
+    
+            <h1>Welcome to Rectify Business: Your Partner in Success</h1>
+            <p> Rectify Business, we are dedicated to helping you achieve your business goals and thrive in today's dynamic market. 
+            As you step into our virtual space, we extend a heartfelt welcome to you.</p> 
+            
+            <h2>Why Choose Rectify Business?</h2>
+            <p>Navigating the complexities of modern business can be challenging. Our team of experienced professionals is here to simplify your journey. Whether you're an established corporation or a budding startup, we offer a diverse range of services tailored to your unique needs.</p>
+            
+            <h2>A Commitment to Excellence</h2>
+            <p>With years of industry expertise, our mission is to empower your business with strategic insights, innovative solutions, and unwavering support. Your success is our success, and we take pride in contributing to your growth story.</p>
+            
+            <h2>Our Comprehensive Services</h2>
+            <p>From optimizing your operations and refining your processes to crafting compelling marketing strategies and harnessing the power of technology, our services cover a broad spectrum of business needs. We're not just service providers; we're your dedicated partners in progress.</p>
+            
+            <h2>Embark on a Journey of Transformation</h2>
+            <p>Join us in this exciting journey towards achieving greater efficiency, profitability, and sustainable growth. As you explore our website, you'll discover the depth of our offerings and the passion we bring to every project.</p>
+            
+    
+    </div>
+    <div>
+  <div class="web-list  rec-ser">
+    <h1>Testing Services</h1>
+
+    <h2>1. Manual Testing Services:</h2>
+    <p>With extensive experience in manual testing, I offer a range of services to thoroughly assess your software applications. My manual testing services encompass:</p>
+    <ul>
+        <li>Functional Testing: Carefully evaluating each feature to ensure they function as intended and meet specified requirements.</li>
+        <li>Regression Testing: Detecting potential regressions and defects that might arise with code changes, ensuring consistent performance.</li>
+        <li>Usability Testing: Assessing user-friendliness, navigation, and overall user experience to enhance application usability.</li>
+        <li>Exploratory Testing: Delving deep into the application to uncover unanticipated issues and validate its behavior in real-world scenarios.</li>
+    </ul>
+
+    <h2>2. API Testing Services:</h2>
+    <p>Drawing from my expertise in API testing, I provide comprehensive services to validate your application's APIs. My API testing services include:</p>
+    <ul>
+        <li>Endpoint Validation: Ensuring that API endpoints function correctly and provide accurate responses.</li>
+        <li>Data Integrity Testing: Verifying the integrity and accuracy of data exchanged between different components.</li>
+        <li>Security Testing: Evaluating authentication, authorization, and encryption mechanisms to safeguard data and system integrity.</li>
+        <li>Load and Performance Testing: Assessing how APIs perform under different loads and stress conditions to ensure scalability.</li>
+    </ul>
+
+    <h2>3. Automated Testing Services:</h2>
+    <p>With a focus on efficient and accurate testing, I offer a suite of automated testing services, including:</p>
+    <ul>
+        <li>Test Script Development: Creating custom automated test scripts tailored to your application's unique requirements.</li>
+        <li>Regression Test Suites: Building and maintaining regression test suites for consistent and swift testing cycles.</li>
+        <li>Continuous Integration Testing: Integrating automated tests into your development pipeline to catch issues early in the process.</li>
+        <li>Data-Driven Testing: Designing tests that use a variety of data inputs to comprehensively validate application behavior.</li>
+    </ul>
+
+    <h2>4. Compatibility Testing Services:</h2>
+    <p>To ensure your application works seamlessly across various platforms and devices, my compatibility testing services include:</p>
+    <ul>
+        <li>Cross-Browser Testing: Verifying that your application functions correctly on different web browsers.</li>
+        <li>Mobile Testing: Assessing app performance, responsiveness, and usability on various mobile devices and operating systems.</li>
+        <li>Device Compatibility Testing: Ensuring your application works well across different hardware configurations.</li>
+    </ul>
+
+    <h2>5. Performance Testing Services:</h2>
+    <p>To guarantee optimal performance, I provide thorough performance testing services, which include:</p>
+    <ul>
+        <li>Load Testing: Simulating varying levels of user activity to evaluate the application's response under different loads.</li>
+        <li>Stress Testing: Pushing the application beyond its capacity to identify performance bottlenecks and failure points.</li>
+        <li>Scalability Testing: Assessing how well the application can scale with increased user load.</li>
+    </ul>
+
+    <p>By leveraging my expertise in testing services, you can optimize your software's quality, functionality, and performance. I'm committed to delivering thorough and accurate results that ensure your application's success.</p>
+    
+</div>
+</div>
+</div>
+
+
+
+</section>
+
+<!-- contact -->
+
+
+<div id="contact" class="contact">
+    <div class="container con ">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-tilte">Contact Me</h1>
+          <p><i class="fa fa-paper-plane" aria-hidden="true"></i> nsrr.alam@gmail.com</p>
+          <p> <i class='bx bx-phone' ></i>7484081859</p>
+          <div class="social-contact" id="social">
+                 <a href="#"><i class='bx bxl-twitter'></i></a>
+                 <a href="#"><i class='bx bxl-linkedin'></i></a>
+                 <a href="#"><i class='bx bxl-github' ></i></a>
+            </div>
+            
+        </div>
+        <div class="contact-right">
+          <form action="" name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="your Email" required>
+            <input type="tel" name="phone" placeholder="your phone no" >
+            <textarea name="Message" id="" cols="30" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn-download btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+  
+      </div>
+    </div>
+  
+  </div>
+
+
+<footer class="footer">
+  
+  <div class="footer-bottom">
+    <p>Copyright &copy; Abu Nasar. All rights reserved.</p>
+    <div class="faded-text">Md Abu Nasar Alam</div>
+  </div>
+</footer>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+<script>
+
+
+//menu active hover effect
+const menuItems = document.querySelectorAll('.navigation ul li a');
+
+menuItems.forEach(item => {
+  item.addEventListener('click', () => {
+    menuItems.forEach(link => link.classList.remove('active'));
+    item.classList.add('active');
+  });
+});
+
+
+
+  $(document).ready(function() {
+    // Function to toggle the menu
+    function toggleMenu() {
+        $('#menu-list').toggleClass('active');
+    }
+
+    // Event listener for the menu button
+    $('#menu-btn').click(toggleMenu);
+
+    // Event listener for the close button
+    $('#close-btn').click(toggleMenu);
+
+    // Event listener to close menu when clicking outside the menu
+    $(document).click(function(event) {
+        if (!$(event.target).closest('.navigation').length) {
+            $('#menu-list').removeClass('active');
+        }
+    });
+});
+
+var tablinks = document.querySelectorAll(".tab-links");
+        var tabcontent = document.querySelectorAll(".tab-content");
+
+        function opentab(tabname) {
+            // Remove "active-link" class from all tab links
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            // Remove "active-tab" class from all tab contents
+            for (tab of tabcontent) {
+                tab.classList.remove("active-tab");
+            }
+
+            // Find the clicked tab link and content by ID
+            var clickedTabLink = document.querySelector(`[onclick="opentab('${tabname}')"]`);
+            var clickedTabContent = document.getElementById(tabname);
+
+            // Add "active-link" class to the clicked tab link
+            clickedTabLink.classList.add("active-link");
+
+            // Add "active-tab" class to the corresponding tab content
+            clickedTabContent.classList.add("active-tab");
+        }
+//services//
+
+
+  
+
+
+
+
+
+
+
+
+        //project...............//
+ document.addEventListener('DOMContentLoaded', function() {
+    const projectsToShowInitially = 3;
+    const projectBoxes = document.querySelectorAll('.project-box');
+    const seeMoreBtn = document.getElementById('see-more-btn');
+
+    // Show the initial projects
+    for (let i = 0; i < projectsToShowInitially; i++) {
+      projectBoxes[i].classList.remove('hidden');
+    }
+
+    // Function to show more projects
+    function showMoreProjects() {
+      projectBoxes.forEach(function(box, index) {
+        if (index >= projectsToShowInitially) {
+          box.classList.remove('hidden');
+        }
+      });
+      seeMoreBtn.style.display = 'none';
+    }
+
+    // Event listener for the "See More" button
+    seeMoreBtn.addEventListener('click', showMoreProjects);
+  });
+        
+
+</script>
+
+
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzh0SnFPe0ASJKIPlcpc7yXo_2OZdgPuvQCSlstadjSIdQe3GRhNea3Vu5sOZ5nUXftMg/exec';
+  const form = document.forms['submit-to-google-sheet'];
+  const msg = document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {
+        msg.innerHTML = "Message sent successfully";
+        setTimeout(function(){
+          msg.innerHTML = "";
+        }, 3000);
+        form.reset();
+
+       
+      })
+      .catch(error => console.error('Error!', error.message));
+  });
+</script>
+
+
+</body>
+</html>
