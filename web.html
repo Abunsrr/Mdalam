@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abu nasar</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTB
+    OenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+
+<style>
+
+:root{
+/*   --bg-color:#1f242d; */
+  --bg-color:#192e54;
+  --second-bg-color:#373c46;
+  --text-color:#fff;
+  --main-color:#0ef;
+  --back-gr: linear-gradient(rgba(9, 5, 54, 0.3), rgba(9, 5, 54, 0.3));
+   --reds-color:#ff004f;
+}
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+}
+    .web {
+    background-color:#101c32;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 80px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.greeting p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.greeting span {
+    font-weight: bold;
+    color:var(--reds-color);
+}
+
+.web-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.web-list li {
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+.web-list p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.web-list span {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .web {
+        padding: 10px;
+    }
+}
+</style>
+<body>
+  
+<!-- navigation -->
+<nav>
+    <!-- <img src="LOGO.png" alt="MD Abu Nasar Alam"> -->
+    <span id="name">Md Abu Nasar Alam</span>
+    <div class="navigation">
+        
+        <ul  class="menu-list " id="menu-list">
+            <i id="close-btn" class="fa fa-times" aria-hidden="true"></i>
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="#aboutme" >About</a></li>
+            <li> <a href="#services" class="active">services</a></li>
+            <li> <a href="#blog">Blogs</a></li>
+            <li> <a href="#project">Project</a></li>
+            <li> <a href="#contact">Contact</a></li>
+           
+        </ul>
+        <img id="menu-btn" src="hamburgepng.png" alt="">
+        <!-- <i class='bx bx-menu' id="menu-btn" ></i> -->
+    </div>
+    
+</nav>
+
+<!-- Home  -->
+
+
+<section class="container " id="web-cont">
+
+<div class="web">
+    
+    <div class="greeting">
+        <p>Welcome to <span>Rectify Business</span>, where we're dedicated to being your partner in growth and transformation.</p>
+        <P> <Span> Rectify Business</Span>, established in 2021, is a dedicated 
+            startup that specializes in revitalizing struggling businesses, offering tailored solutions to uplift ventures 
+            that need a fresh perspective and a path towards success</P>
+        <p>At Rectify Business, we understand that challenges are a natural part of business. If your journey hasn't been as smooth as you'd hoped, fear not. We're here to help you rectify the course, rejuvenate your strategies, and elevate your success.</p>
+        <p>In the dynamic world of web development, challenges and setbacks can arise. If your online presence isn't achieving the desired results, fear not. At Rectifybusiness, we specialize in breathing new life into your digital strategies, rectifying any issues, and enhancing your web development endeavors.</p>
+        <p>Our mission is to empower you with cutting-edge web solutions, whether it's refining your front-end to captivate users or optimizing your back-end for seamless functionality. Together, let's take your online ventures to new heights.</p>
+        <p>Explore our comprehensive services tailored to meet your unique web development needs:</p>
+    </div>
+    <div>
+  <ul class="web-list">
+    <li>
+      <p><span>Front-End Development Expertise:</span></p>
+      <p>We excel in crafting clean and semantic HTML code that forms the foundation of your web pages. Our team ensures that your content is structured for optimal presentation and accessibility.</p>
+      <p>Our skilled developers create stunning styles using CSS, enhancing the visual appeal and user experience of your website. We pay meticulous attention to details to ensure consistency across different devices and browsers.</p>
+      <p>Harnessing the power of JavaScript, we bring interactivity and dynamism to your web applications. From simple animations to complex user interfaces, we make your website engaging and user-friendly.</p>
+      <p>Our proficiency in Tailwind CSS allows us to rapidly design and implement responsive layouts that adapt seamlessly to various screen sizes, providing a consistent experience across devices.</p>
+      <p>We specialize in building robust web applications using React, a powerful JavaScript library. Our developers create dynamic user interfaces that enhance user engagement and streamline navigation.</p>
+    </li>
+    <li>
+      <p><span>Back-End Development Mastery:</span></p>
+      <p>Our team's strong command of SQL enables us to design and manage databases with precision. We ensure efficient data storage, retrieval, and optimization to support your website's functionality.</p>
+    </li>
+    <li>
+      <p><span>Custom Solutions for Your Business:</span></p>
+      <p>Understanding that every business is unique, we create custom web solutions that align with your specific requirements. Our tailored approach ensures your website effectively communicates your brand and offerings.</p>
+    </li>
+    <li>
+      <p><span>Testing and Quality Assurance:</span></p>
+      <p>Quality is paramount to us. Our team employs thorough testing methodologies, including both manual and automated testing, to identify and rectify issues before they impact your users.</p>
+      <p>We rigorously assess API functionalities using tools like Postman and Rest-Assured, ensuring seamless integration and smooth data exchange between different systems.</p>
+      <p>Our expertise in Selenium empowers us to conduct automated browser testing. This method saves time and minimizes inconsistencies across various platforms and browsers.</p>
+    </li>
+    <li>
+      <p><span>Agile Development Practices:</span></p>
+      <p>We adopt an Agile development methodology that promotes collaboration, flexibility, and iterative progress. This enables us to adapt to changing requirements and deliver incremental improvements.</p>
+    </li>
+  </ul>
+</div>
+</div>
+
+
+
+</section>
+
+<!-- contact -->
+
+
+<div id="contact" class="contact">
+    <div class="container con ">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-tilte">Contact Me</h1>
+          <p><i class="fa fa-paper-plane" aria-hidden="true"></i> nsrr.alam@gmail.com</p>
+          <p> <i class='bx bx-phone' ></i>7484081859</p>
+          <div class="social-contact" id="social">
+                 <a href="#"><i class='bx bxl-twitter'></i></a>
+                 <a href="#"><i class='bx bxl-linkedin'></i></a>
+                 <a href="#"><i class='bx bxl-github' ></i></a>
+            </div>
+            
+        </div>
+        <div class="contact-right">
+          <form action="" name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="your Email" required>
+            <textarea name="Message" id="" cols="30" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn-download btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+  
+      </div>
+    </div>
+  
+  </div>
+
+
+<footer class="footer">
+  
+  <div class="footer-bottom">
+    <p>Copyright &copy; Abu Nasar. All rights reserved.</p>
+    <div class="faded-text">Md Abu Nasar Alam</div>
+  </div>
+</footer>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+<script>
+
+
+//menu active hover effect
+const menuItems = document.querySelectorAll('.navigation ul li a');
+
+menuItems.forEach(item => {
+  item.addEventListener('click', () => {
+    menuItems.forEach(link => link.classList.remove('active'));
+    item.classList.add('active');
+  });
+});
+
+
+
+  $(document).ready(function() {
+    // Function to toggle the menu
+    function toggleMenu() {
+        $('#menu-list').toggleClass('active');
+    }
+
+    // Event listener for the menu button
+    $('#menu-btn').click(toggleMenu);
+
+    // Event listener for the close button
+    $('#close-btn').click(toggleMenu);
+
+    // Event listener to close menu when clicking outside the menu
+    $(document).click(function(event) {
+        if (!$(event.target).closest('.navigation').length) {
+            $('#menu-list').removeClass('active');
+        }
+    });
+});
+
+var tablinks = document.querySelectorAll(".tab-links");
+        var tabcontent = document.querySelectorAll(".tab-content");
+
+        function opentab(tabname) {
+            // Remove "active-link" class from all tab links
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            // Remove "active-tab" class from all tab contents
+            for (tab of tabcontent) {
+                tab.classList.remove("active-tab");
+            }
+
+            // Find the clicked tab link and content by ID
+            var clickedTabLink = document.querySelector(`[onclick="opentab('${tabname}')"]`);
+            var clickedTabContent = document.getElementById(tabname);
+
+            // Add "active-link" class to the clicked tab link
+            clickedTabLink.classList.add("active-link");
+
+            // Add "active-tab" class to the corresponding tab content
+            clickedTabContent.classList.add("active-tab");
+        }
+//services//
+
+
+  
+
+
+
+
+
+
+
+
+        //project...............//
+ document.addEventListener('DOMContentLoaded', function() {
+    const projectsToShowInitially = 3;
+    const projectBoxes = document.querySelectorAll('.project-box');
+    const seeMoreBtn = document.getElementById('see-more-btn');
+
+    // Show the initial projects
+    for (let i = 0; i < projectsToShowInitially; i++) {
+      projectBoxes[i].classList.remove('hidden');
+    }
+
+    // Function to show more projects
+    function showMoreProjects() {
+      projectBoxes.forEach(function(box, index) {
+        if (index >= projectsToShowInitially) {
+          box.classList.remove('hidden');
+        }
+      });
+      seeMoreBtn.style.display = 'none';
+    }
+
+    // Event listener for the "See More" button
+    seeMoreBtn.addEventListener('click', showMoreProjects);
+  });
+        
+
+</script>
+
+
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzh0SnFPe0ASJKIPlcpc7yXo_2OZdgPuvQCSlstadjSIdQe3GRhNea3Vu5sOZ5nUXftMg/exec';
+  const form = document.forms['submit-to-google-sheet'];
+  const msg = document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {
+        msg.innerHTML = "Message sent successfully";
+        setTimeout(function(){
+          msg.innerHTML = "";
+        }, 3000);
+        form.reset();
+
+       
+      })
+      .catch(error => console.error('Error!', error.message));
+  });
+</script>
+
+
+</body>
+</html>

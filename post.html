@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abu nasar</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTB
+    OenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+<!-- navigation -->
+<nav>
+    <!-- <img src="LOGO.png" alt="MD Abu Nasar Alam"> -->
+    <span id="name">Md Abu Nasar Alam</span>
+    <div class="navigation">
+        
+        <ul  class="menu-list " id="menu-list">
+            <i id="close-btn" class="fa fa-times" aria-hidden="true"></i>
+            <li> <a href="blog.html" >Home</a></li>
+            <li> <a href="#aboutme" >About</a></li>
+            <li> <a href="#services">services</a></li>
+            <li> <a href="#blog" class="active">Blogs</a></li>
+            <li> <a href="#project">Project</a></li>
+            <li> <a href="#contact">Contact</a></li>
+           
+        </ul>
+        <img id="menu-btn" src="hamburgepng.png" alt="">
+        <!-- <i class='bx bx-menu' id="menu-btn" ></i> -->
+    </div>
+    
+</nav>
+
+<!-- Home  -->
+
+
+
+<section id="post-container" class="post-container">
+<div class="blog">
+<div class="posts">
+  <img src="images/portfolio4.jpg" alt="">
+   
+  <h3>learn web development</h3>
+  <h2>What is Web Development?</h2>
+  <p>Web development is the process of creating and maintaining websites and web applications. It involves a combination of coding, designing, and problem-solving to bring digital experiences to life on the internet.</p>
+
+  <h2>Front-end Development</h2>
+  <p>Front-end development focuses on the visual and interactive aspects of a website. It's all about crafting user interfaces that are appealing, responsive, and intuitive. HTML, CSS, and JavaScript are the core technologies used for front-end development.</p>
+
+  <h2>Back-end Development</h2>
+  <p>Back-end development deals with the server-side of web applications. It includes managing databases, handling user authentication, and implementing the logic that powers the website. Popular languages for back-end development include Python, Ruby, PHP, and Node.js.</p>
+
+  <h2>Full Stack Development</h2>
+  <p>Full stack developers are proficient in both front-end and back-end development. They have the skills to create complete web applications from start to finish, handling everything from user interfaces to server management.</p>
+
+  <h2>Importance of Web Development</h2>
+  <p>In today's digital age, having a strong online presence is essential for businesses and individuals alike. A well-designed and functional website can attract customers, provide information, and even facilitate e-commerce transactions.</p>
+
+  <h2>The Future of Web Development</h2>
+  <p>The field of web development is constantly evolving. New technologies like AI, AR/VR, and voice interfaces are shaping the way websites are built and experienced. Staying updated with the latest trends and tools is crucial for a successful career in web development.</p>
+
+  <h2>Conclusion</h2>
+  <p>Web development is a dynamic and exciting field that continues to evolve with technological advancements. Whether you're interested in creating stunning user interfaces, managing databases, or building entire web applications, there's a place for you in the world of web development.</p>
+
+    
+
+    ---
+</div>
+
+
+
+
+
+
+</div>
+ 
+<div class="categ" id="categ">
+<h2>categories</h2>
+
+<a href="#">web Development</a>
+
+<a href="#">web design</a>
+
+<a href="#">manual testing</a>
+
+<a href="#">Automation Testing</a>
+
+<a href="#">java script</a>
+
+<a href="#">java</a>
+
+<a href="#">Agile</a>
+
+<a href="#">jira</a>
+
+<a href="#">Resume</a>
+
+<a href="#">SLDC</a>
+
+<a href="#">CSS</a>
+
+<a href="#">Bug-life-cycle</a>
+
+</div>
+
+</section>
+
+
+
+
+
+<footer class="footer">
+  
+  <div class="footer-bottom">
+    <p>Copyright &copy; Abu Nasar. All rights reserved.</p>
+    <div class="faded-text">Md Abu Nasar Alam</div>
+  </div>
+</footer>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+<script>
+
+
+//menu active hover effect
+const menuItems = document.querySelectorAll('.navigation ul li a');
+
+menuItems.forEach(item => {
+  item.addEventListener('click', () => {
+    menuItems.forEach(link => link.classList.remove('active'));
+    item.classList.add('active');
+  });
+});
+
+
+
+  $(document).ready(function() {
+    // Function to toggle the menu
+    function toggleMenu() {
+        $('#menu-list').toggleClass('active');
+    }
+
+    // Event listener for the menu button
+    $('#menu-btn').click(toggleMenu);
+
+    // Event listener for the close button
+    $('#close-btn').click(toggleMenu);
+
+    // Event listener to close menu when clicking outside the menu
+    $(document).click(function(event) {
+        if (!$(event.target).closest('.navigation').length) {
+            $('#menu-list').removeClass('active');
+        }
+    });
+});
+
+var tablinks = document.querySelectorAll(".tab-links");
+        var tabcontent = document.querySelectorAll(".tab-content");
+
+        function opentab(tabname) {
+            // Remove "active-link" class from all tab links
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            // Remove "active-tab" class from all tab contents
+            for (tab of tabcontent) {
+                tab.classList.remove("active-tab");
+            }
+
+            // Find the clicked tab link and content by ID
+            var clickedTabLink = document.querySelector(`[onclick="opentab('${tabname}')"]`);
+            var clickedTabContent = document.getElementById(tabname);
+
+            // Add "active-link" class to the clicked tab link
+            clickedTabLink.classList.add("active-link");
+
+            // Add "active-tab" class to the corresponding tab content
+            clickedTabContent.classList.add("active-tab");
+        }
+//services//
+
+
+  
+
+
+
+
+
+
+
+
+        //project...............//
+ document.addEventListener('DOMContentLoaded', function() {
+    const projectsToShowInitially = 3;
+    const projectBoxes = document.querySelectorAll('.project-box');
+    const seeMoreBtn = document.getElementById('see-more-btn');
+
+    // Show the initial projects
+    for (let i = 0; i < projectsToShowInitially; i++) {
+      projectBoxes[i].classList.remove('hidden');
+    }
+
+    // Function to show more projects
+    function showMoreProjects() {
+      projectBoxes.forEach(function(box, index) {
+        if (index >= projectsToShowInitially) {
+          box.classList.remove('hidden');
+        }
+      });
+      seeMoreBtn.style.display = 'none';
+    }
+
+    // Event listener for the "See More" button
+    seeMoreBtn.addEventListener('click', showMoreProjects);
+  });
+        
+
+</script>
+
+
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzh0SnFPe0ASJKIPlcpc7yXo_2OZdgPuvQCSlstadjSIdQe3GRhNea3Vu5sOZ5nUXftMg/exec';
+  const form = document.forms['submit-to-google-sheet'];
+  const msg = document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {
+        msg.innerHTML = "Message sent successfully";
+        setTimeout(function(){
+          msg.innerHTML = "";
+        }, 3000);
+        form.reset();
+
+       
+      })
+      .catch(error => console.error('Error!', error.message));
+  });
+</script>
+
+
+</body>
+</html>
