@@ -1061,7 +1061,7 @@ nav .navigation ul li a{
  }
 
     .alternate-image{
-     display: block;
+     display: none;
       float: left;
     margin: 2px auto;
     height: 300px;
