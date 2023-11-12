@@ -1215,7 +1215,11 @@ display: none;
   }
   
 
-
+    .about-img img{
+      display: none;
+    
+     }
+      
 
   }
 
